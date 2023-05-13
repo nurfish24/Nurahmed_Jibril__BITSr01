@@ -34,22 +34,23 @@
                 </nav>
                 <div class="header-text">
                     
-                    <div class="imgdiv">
-                        <img src="images/homepic2.jpg" class="home-image" >
-                    </div>
+                   
                    <div class="typed-text">
                     <h2>Hi, I'm <span style="color:#27ae60">Nurahmed Jibril.</span></h2><br>
                     <h1>From Bahirdar Univerisity Faculity of <br>
                     Elecrical and Computer engineering 
                 Department of Computer Engineering</h1><br>
 
-                
-                
                 <p id="typedtext"></p>
+                <p id="typedtext2"></p>
                 <script>
                     var typedtext = document.getElementById('typedtext');
-                  var text = "And also I'm a Web Developer, I love to create beautiful and functional websites!";
+                    var typedtext2 = document.getElementById('typedtext2');
+                  var text = "I'm a Web Developer,";
+                  var text2 = "I love to create beautiful and functional websites!";
+            
                   var index = 0;
+                  var index2 = 0;
             
                 
                   var addLetter = function() {
@@ -58,19 +59,32 @@
                       setTimeout(addLetter, 50); 
                     }
                   };
+                  var addLetter2 = function() {
+                    typedtext2.innerHTML += text2.charAt(index2++);
+                    if(index2 < text2.length) {
+                      setTimeout(addLetter2, 50); 
+                    }
+                  };
             
                   addLetter();
+                  setTimeout(() => {
+                    addLetter2();
+                  },1790);
+
                 </script>
                 
                  
-                </div>
-                    
+                
+              </div>
+              <div class="imgdiv">
+                <img src="images/homepic.jpg" class="home-image" >
+            </div>   
                 </div>
             </div>
         </div>
 <div id="about">
     <div class="container">
-        <div class="row">
+        <div class="row" style="background: rgb(250, 250, 250);">
             <div class="about-col-1">
               <img src="images/user.jpg" > 
             </div>
@@ -101,7 +115,7 @@ I have always had an aptitude for technology and computers from a very young age
               <ul>
                 <li>I have learned my primary school in Woreta from 2006 to 2014 G.C</li>
                 <li>Secondary school in Woreta secondary and preparatory school from 2015 to 2019 G.C</li>
-                <li>now I'm learning a bachelor's degree in computer engineering at Bahir dar university in 2020. I will  graduate in 2024 G.C</li>
+                <li>now I'm learning a bachelor's degree in computer engineering at Bahirdar university in 2020. I will  graduate in 2024 G.C</li>
             
             <li style="list-style-type:square;"><p><span style="color:#27ae60">In addition to the curriculum,</span> I have attended Community events such as hackathons,
               coding boot camps, and tech meetups to network with other tech-minded individuals 
@@ -117,7 +131,6 @@ I have always had an aptitude for technology and computers from a very young age
 
 <section id="projects-section">
     <h1 class="sub-title2">My previous works</h1>
-<!-- Slideshow container -->
 <div class="container-slide10">
     <div class="container-slide20">
 <div class="slideshow-container">
